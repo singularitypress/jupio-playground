@@ -1,6 +1,6 @@
 import Head from "../components/head";
 import Script from "next/script";
-import "../styles/index.css";
+import "../styles/index.scss";
 
 export default ({ Component, pageProps }) => {
   return (

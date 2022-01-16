@@ -28,27 +28,9 @@ npm run dev
 
 ## Making New Pages
 
-1. In the `pages` folder, create a new file called `<your-page-name-here>.js`
-2. In your new file, enter the following boilerplate code:
+Instructions:
 
-```javascript
-import Head from "../components/head";
-import Main from "../components/main";
-
-export default () => {
-  return (
-    <>
-      <Head title={"your-title-here"} />
-
-      <Main>your-content-here</Main>
-    </>
-  );
-};
-```
-
-3. Change `"your-title-here"` to be whatever you want the page title (i.e. the text you see in the browser tab) to be.
-
-4. Change `your-content-here` to be whatever content you want on the page.
+1. [How to make a new Currency Converter page](/pages/currency-converter)
 
 ## Styling
 
@@ -58,7 +40,7 @@ export default () => {
 <button className="my-button">text</button>
 ```
 
-2. Then in the `styles/index.css` file:
+2. Then go to the relevant CSS file, like if you're changing something for the currency-converter, go to `currency-converter.css` and add:
 
 ```css
 .my-button {
