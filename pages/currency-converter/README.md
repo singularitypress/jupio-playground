@@ -21,3 +21,5 @@ export default () => {
 3. Change `"your-title-here"` to be whatever you want the page title (i.e. the text you see in the browser tab) to be.
 
 4. Change `your-content-here` to be whatever content you want on the page.
+
+5. You should be able to view your new page at `localhost:3000/currency-converter/<your-page-name-here>`
