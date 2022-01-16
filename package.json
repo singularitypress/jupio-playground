@@ -1,0 +1,30 @@
+{
+  "name": "jupio-playground",
+  "version": "1.0.0",
+  "description": "A component playground for interns",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/singularitypress/jupio-playground.git"
+  },
+  "author": "Jay Pandya, Amy Pandya",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/singularitypress/jupio-playground/issues"
+  },
+  "homepage": "https://github.com/singularitypress/jupio-playground#readme",
+  "dependencies": {
+    "next": "^12.0.8",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.7.0",
+    "eslint-plugin-react": "^7.28.0"
+  }
+}
