@@ -58,7 +58,7 @@ export default () => {
 <button className="my-button">text</button>
 ```
 
-2. Then in the CSS:
+2. Then in the `styles/index.css` file:
 
 ```css
 .my-button {
