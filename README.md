@@ -16,3 +16,4 @@
 - [A General How-To Git (assuming you have a github repo already)](https://github.com/singularitypress/jupio-playground/tree/main/documentation/how-to-git)
 - [Foundations of Web Development, how to make a modal](https://github.com/singularitypress/jupio-playground/tree/main/documentation/tutorials/modal)
 - [Common errors](https://github.com/singularitypress/jupio-playground/tree/main/documentation/common-errors)
+- [Basic Widget How-Tos](https://github.com/singularitypress/jupio-playground/tree/main/documentation/basic-widget-how-tos)
