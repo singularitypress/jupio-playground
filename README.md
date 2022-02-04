@@ -2,7 +2,6 @@
 
 ## Table of Contents
 
-- [Putting Sites Online](https://github.com/singularitypress/jupio-playground/tree/main/documentation/putting-sites-online)
 - [FAQ](https://github.com/singularitypress/jupio-playground/tree/main/documentation/FAQ)
   - [Common Terminal Commands](https://github.com/singularitypress/jupio-playground/tree/main/documentation/FAQ#common-terminal-commands)
   - [Key Combos](https://github.com/singularitypress/jupio-playground/tree/main/documentation/FAQ#key-combos)
@@ -16,3 +15,4 @@
 - [Adding Bootstrap to Your Project (after you made one and put it on the internet)](https://github.com/singularitypress/jupio-playground/tree/main/documentation/add-bootstrap)
 - [A General How-To Git (assuming you have a github repo already)](https://github.com/singularitypress/jupio-playground/tree/main/documentation/how-to-git)
 - [Foundations of Web Development, how to make a modal](https://github.com/singularitypress/jupio-playground/tree/main/documentation/tutorials/modal)
+- [Common errors](https://github.com/singularitypress/jupio-playground/tree/main/documentation/common-errors)

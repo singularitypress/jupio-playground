@@ -84,3 +84,9 @@ It depends on where you want it to go. Normally, people (like me) have a folder 
 ## How do I start my project?
 
 You can typically check the README.md to see if it tells you how to get started. Usually it'll tell you to run either `npm start` (typical of create-react-app) or `npm run dev` (typical of nextjs). You can also check in the `"scripts"` part of a `package.json` file where you'll typically find a command you need. Create React App will have one called `"start"` and NextJS has one called `"dev"` (it has a start one too, but don't worry about that).
+
+## Why don't any of my commands work?
+
+If you run `npm start` (in Create React App) or `npm run dev`, you'll start up your app. You can't then just dump in other commands in the same terminal while your app is running.
+
+If you're in the terminal, and you're trying to run some commands and they aren't doing anything (i.e. no actual error messages or anything), you're probably running something already. Try spamming `control + C` (see the glossary for why), running `clear`, then running the command you want.
