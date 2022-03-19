@@ -14,6 +14,7 @@
 - [Making a Project and Putting it on the Internet](https://github.com/singularitypress/jupio-playground/tree/main/documentation/putting-sites-online)
 - [Adding you own styles](https://github.com/singularitypress/jupio-playground/tree/main/documentation/your-css/styling.md)
 - [Adding fonts](https://github.com/singularitypress/jupio-playground/tree/main/documentation/your-css/adding-fonts.md)
+- [Adding pages](https://github.com/singularitypress/jupio-playground/tree/main/documentation/basic-widget-how-tos/new-pages.md)
 - [Adding Bootstrap to Your Project (after you made one and put it on the internet)](https://github.com/singularitypress/jupio-playground/tree/main/documentation/add-bootstrap)
 - [A General How-To Git (assuming you have a github repo already)](https://github.com/singularitypress/jupio-playground/tree/main/documentation/how-to-git)
 - [Foundations of Web Development, how to make a modal](https://github.com/singularitypress/jupio-playground/tree/main/documentation/tutorials/modal)
