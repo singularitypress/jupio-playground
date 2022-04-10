@@ -4,7 +4,13 @@ module.exports = {
     es2021: true,
     node: true,
   },
-  extends: ["eslint:recommended", "plugin:react/recommended"],
+  extends: [
+    "next/core-web-vitals",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+  ],
+  parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -12,11 +18,12 @@ module.exports = {
     ecmaVersion: "latest",
     sourceType: "module",
   },
-  plugins: ["react"],
+  plugins: ["react", "@typescript-eslint"],
   rules: {
     indent: ["error", 2],
+    "linebreak-style": ["error", "unix"],
     quotes: ["error", "double"],
     semi: ["error", "always"],
-    "react/display-name": ["error", 0],
+    "@typescript-eslint/no-var-requires": ["error", "never"],
   },
 };
