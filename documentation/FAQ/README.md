@@ -53,6 +53,19 @@ Folder terms can be confusing, so here's some common things to understand:
 - `./`
   - The current folder you're in. If you have the `code` command set up for VS Code, running `code ./` or `code .` (same difference) basically is telling VS Code to open and to be set to the folder you're in right now.
 
+## Folder Terminology
+
+It turns out that a lot of people don't quite understand how folders or files work, especially people born after '95. So here's the general idea: think of files as like... actual files like documents or something, and think of *folders* and *paths* as addresses. So, when you're creating a project, think about *where* you're making it, at what *address*.
+
+EXAMPLE:
+We've got some documents/papers over at the office. The office is at 333 King Street East. That office is in Toronto, Toronto is in Ontario, Ontario is in Canada, and Canada is on Earth. So you can say that the documents are at `/Earth/Canada/Ontario/Toronto/333 King Street E`. 
+Similarly, if you have a `projects` folder inside a `Documents` folder, you can say that your project is at `~/Documents/projects` (`~/` is the equivalent of Earth, it's as high-up as you can go).
+
+Terms:
+* `~/`
+	* This is the "root" of your entire computer (essentially). Sticking to the "address" analogy, it's Earth. It's as high up as you can go in terms of locations. Typically inside `~/` you have `Documents`, `Downloads`, etc, just like how inside `Earth` you have `Canada`, the `United States`, etc.
+	* Note that `~/` is another name for `/User/<your laptop name>`
+
 # FAQ
 
 ## How do I find my projects?
