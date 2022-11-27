@@ -55,16 +55,17 @@ Folder terms can be confusing, so here's some common things to understand:
 
 ## Folder Terminology
 
-It turns out that a lot of people don't quite understand how folders or files work, especially people born after '95. So here's the general idea: think of files as like... actual files like documents or something, and think of *folders* and *paths* as addresses. So, when you're creating a project, think about *where* you're making it, at what *address*.
+It turns out that a lot of people don't quite understand how folders or files work, especially people born after '95. So here's the general idea: think of files as like... actual files like documents or something, and think of _folders_ and _paths_ as addresses. So, when you're creating a project, think about _where_ you're making it, at what _address_.
 
 EXAMPLE:
-We've got some documents/papers over at the office. The office is at 333 King Street East. That office is in Toronto, Toronto is in Ontario, Ontario is in Canada, and Canada is on Earth. So you can say that the documents are at `/Earth/Canada/Ontario/Toronto/333 King Street E`. 
+We've got some documents/papers over at the office. The office is at 333 King Street East. That office is in Toronto, Toronto is in Ontario, Ontario is in Canada, and Canada is on Earth. So you can say that the documents are at `/Earth/Canada/Ontario/Toronto/333 King Street E`.
 Similarly, if you have a `projects` folder inside a `Documents` folder, you can say that your project is at `~/Documents/projects` (`~/` is the equivalent of Earth, it's as high-up as you can go).
 
 Terms:
-* `~/`
-	* This is the "root" of your entire computer (essentially). Sticking to the "address" analogy, it's Earth. It's as high up as you can go in terms of locations. Typically inside `~/` you have `Documents`, `Downloads`, etc, just like how inside `Earth` you have `Canada`, the `United States`, etc.
-	* Note that `~/` is another name for `/User/<your laptop name>`
+
+- `~/`
+  - This is the "root" of your entire computer (essentially). Sticking to the "address" analogy, it's Earth. It's as high up as you can go in terms of locations. Typically inside `~/` you have `Documents`, `Downloads`, etc, just like how inside `Earth` you have `Canada`, the `United States`, etc.
+  - Note that `~/` is another name for `/User/<your laptop name>`
 
 # FAQ
 
@@ -103,3 +104,25 @@ You can typically check the README.md to see if it tells you how to get started.
 If you run `npm start` (in Create React App) or `npm run dev`, you'll start up your app. You can't then just dump in other commands in the same terminal while your app is running.
 
 If you're in the terminal, and you're trying to run some commands and they aren't doing anything (i.e. no actual error messages or anything), you're probably running something already. Try spamming `control + C` (see the glossary for why), running `clear`, then running the command you want.
+
+## Making a new Node Project
+
+To create a new project, navigate to your projects folder in the terminal (for reference, see: _Where do I make a new project?_). From there, create a new folder by running: `mkdir yourprojectname`. Enter that folder with `cd yourprojectname` and then run `npm init`.
+
+You'll be asked a bunch of questions in the terminal like what your project name is and stuff, the only thing that really matters typically is the "Package Name" which can be whatever you want (you can write your name as the author and stuff if you want, it's not a big deal, you won't break anything).
+
+Now, open the `yourprojectname` folder in VS Code, and once it's open, create a file called `.gitignore` with just one line in it: `node_modules` . This is to prevent the tens of thousands of files that are in node_modules in your project folder from ending up on github because you don't normally upload it there.
+
+Alright. You've _set up_ a node project. Does it do anything? No. Not yet, but we have the blueprint and boilerplate stuff out of the way at least.
+
+## Running Your Code with Node
+
+Lets assume you want to run a JS file called `calculate-taxes.js` inside a project called `do-tax-stuff` located at `~/Documents/projects/do-tax-stuff`
+
+1. navigate to your project like so: `cd ~/Documents/projects/do-tax-stuff`
+2. Check to see it `calculate-taxes.js` shows up by running `ls` (list files in current folder)
+3. If you see the file, you can run `node calculate-taxes.js`
+
+Basically if you want to run any JS file, just navigate to it in the terminal, then run `node whateveryourfile.js` . If it doesn't work, it's typically because you're in the wrong folder (check with `ls`) or because the JS file itself is coded wrong. Sometimes I write code that node can't run because it's only supposed to run in the browser; like Node doesn't know what a `document` or a `window` is or whatever.
+
+If you want to shorthand the `node calculate-taxes.js` command, you can open the `package.json` of your project, look at `"scripts"`, and add something for example like `"do-calc": "node calculate-taxes.js"` so that you can just run `npm run do-calc` instead.
