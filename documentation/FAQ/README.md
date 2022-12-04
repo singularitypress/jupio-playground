@@ -99,6 +99,45 @@ It depends on where you want it to go. Normally, people (like me) have a folder 
 
 You can typically check the README.md to see if it tells you how to get started. Usually it'll tell you to run either `npm start` (typical of create-react-app) or `npm run dev` (typical of nextjs). You can also check in the `"scripts"` part of a `package.json` file where you'll typically find a command you need. Create React App will have one called `"start"` and NextJS has one called `"dev"` (it has a start one too, but don't worry about that).
 
+## How do I *create* a new component (React)
+
+First make sure your project is open in VS Code, then:
+
+* If you *don't* have a `components` folder:
+	* Create a `components` folder
+	* Create an `index.js` file
+	* Create a file for your component like `my-component.jsx`
+	* Add `export * from "./my-component.jsx";` to your `index.js` file
+	* Add the code from *fig.1* to your `my-component.jsx` file
+
+* If you *do* have a `components` folder
+	* Create a file for your component like `my-component.jsx`
+	* Add `export * from "./my-component.jsx";` to your `index.js` file
+	* Add the code from *fig.1* to your `my-component.jsx` file
+
+*fig.1*
+```jsx
+import React from "react";
+
+export const MyComponent = () => {
+	return (
+		<div>
+			I dunno, this is just placeholder JSX content lol
+		</div>
+	);
+}
+```
+
+## How do I *use* components in React?
+
+You'll need to `import` your component to the page/component you want to use it on.
+
+* With autocomplete:
+	* Say you're using the component from *fig.1*, you can start typing `<MyCom` and VS Code may allow you to autocomplete and auto-import the component for you.
+* Without autocomplete:
+	* Say you're using the component from *fig.1*, you can type in `<MyComponent />` wherever you want to actually display your component. At the top of your file, import it with: `import { MyComponent } from "../components"`
+	* if this doesn't work, you need to change the folder you're importing it from (autocomplete will show you what folder you need to import from)
+
 ## Why don't any of my commands work?
 
 If you run `npm start` (in Create React App) or `npm run dev`, you'll start up your app. You can't then just dump in other commands in the same terminal while your app is running.
